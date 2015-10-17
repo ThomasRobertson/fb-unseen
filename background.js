@@ -52,7 +52,4 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
   else if (request.action == 'quickEnable') {
     chrome.browserAction.setIcon({path: 'icon48.png'})
   }
-  else if (request.action == 'trackMarkAsRead') {
-    _gaq.push(['_trackEvent', 'MarkAsRead', 'clicked']);
-  }
 })
